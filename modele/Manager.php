@@ -1,0 +1,18 @@
+<?php
+
+abstract class Manager {
+
+    private $pdo;
+
+    private function setBdd() {
+        $this->pdo = new PDO("mysql:host=localhost;dbname=vtc;charset=utf8", "root", "");
+        $this->pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
+    }
+
+    protected function getBdd() {
+        if ($this->pdo == null) {
+            $this->setBdd();
+        }
+        return $this->pdo;
+    }
+}

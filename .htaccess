@@ -1,0 +1,10 @@
+
+# permet de pouvoir changer l'url de notre site, maintenant si je met : http://localhost/mini-projet/accueil , ça marche
+
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^(.*)$ index.php?page=$1
+
