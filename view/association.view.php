@@ -1,6 +1,6 @@
 <?php ob_start() ?>
 
-<p>Nombre d'associations : <?= count($assos) ?></p> 
+<!-- <p>Nombre d'associations : <?= count($assos) ?></p>  -->
 
 <table class="table table-hover text-center">
 

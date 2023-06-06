@@ -12,7 +12,7 @@ class AssoManager extends Manager {
     }
 
     public function getAssos() {
-        return $this->$assos;
+        return $this->assos;
     }
 
     public function loadAssos() {
